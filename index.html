@@ -6,12 +6,302 @@
     <title>Three Ass</title>
     <!-- link Tailwind css & DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-     <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  .img{
+    background-image: url(./Images/2.png);
+    background-repeat: no-repeat;
+    /* width: 500px;
+    height: 500px; */
+  }
+  .img3{
+    background-image: url(./Images/3.png);
+    background-repeat: no-repeat;
+    /* width: 500px;
+    height: 500px; */
+  }
+  .img4{
+    background-image: url(./Images/4.png);
+    background-repeat: no-repeat;
+    /* width: 1000px;
+    height:1000px; */
+  }
+  
+</style>
 </head>
 <body>
-    <header>
-
+    <header class="lg:px-36">
+        <!-- Navbar -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
+                      
+                    </ul>
+                  </div>
+                  <a class="text-3xl font-bold">Hockey’s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn btn-error">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+        <!-- part-1 -->
+        <section class="relative">
+            <div>
+                <div class="carousel w-full">
+                    <div id="slide1" class="carousel-item relative w-full">
+                      <img src="Images/1.png" class="w-full" />
+                      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a  href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                      </div>
+                </div> 
+            </div>
+            <div class="bg-yellow-950 w-96 p-4 rounded-lg lg:absolute lg:right-48 lg:bottom-10 ">
+                <h3 class="text-white text-2xl font-bold">Meet all the heroes from the field</h3>
+                <p class="text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+              </div>
+        </section>
+        <!-- hockey club-->
+        <section class="py-24">
+            <h1 class="text-3xl font-bold text-center">Professional Hockeys Club</h1>
+            <p class="text-center">Norwich Hockey Club was established to create an elite secondary hockey <br> program for boys and girls from Connecticut and beyond.</p>
+            <div class="py-24 text-center gap-12 grid lg:grid-cols-4 grid-cols-1">
+                
+                    <div>
+                        <div class="radial-progress text-red-500" style="--value:87;" role="progressbar">87%</div>
+                        <h2 class="font-semibold">Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum <br>
+                             dignissim adipiscing .</p>
+                    </div>
+                    <div>
+                        <div class="radial-progress text-green-500" style="--value:90;" role="progressbar">90%</div>
+                        <h2 class="font-semibold">Experienced Coach</h2>
+                        <p>Amet consectetur. Condimentum <br>
+                             dignissim adipiscing .</p>
+                    </div>
+                    <div>
+                        <div class="radial-progress text-orange-500" style="--value:95;" role="progressbar">95%</div>
+                        <h2 class="font-semibold">Senior Player</h2>
+                        <p>Amet consectetur. Condimentum <br>
+                             dignissim adipiscing .</p>
+                    </div>
+                    <div>
+                        <div class="radial-progress text-blue-500" style="--value:80;" role="progressbar">80%</div>
+                        <h2 class="font-semibold">Training Ground</h2>
+                        <p>Amet consectetur. Condimentum <br>
+                             dignissim adipiscing .</p>
+                    </div>
+                
+                
+            </div>
+        </section>
     </header>
+    <main class="lg:px-36">
+     <section>
+      <h3 class="text-3xl font-bold text-center">
+        Program Sections
+      </h3>
+      <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+      <div class="flex flex-col lg:flex-row py-12 gap-12">
+        <div class="card lg:w-[580px] bg-base-50 flex-1 shadow-lg image-full">
+          <figure><img src="Images/2.png" alt="" /></figure>
+          <div class="card-body lg:px-24 lg:py-24">
+            <h2 class="card-title">Junior Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="btn btn-error w-36">Register Now</button>
+          </div>
+        </div>
+        <div class="card lg:w-[580px] bg-base-50 flex-1 shadow-lg image-full">
+          <figure><img src="Images/3.png" alt="" /></figure>
+          <div class="card-body lg:px-24 lg:py-24">
+            <h2 class="card-title">Teenager Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="btn btn-error w-36">Register Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center m-6 ">
+        <div class="card w-[100%] lg:w-[580px] bg-base-50 flex-1 shadow-lg image-full">
+          <figure><img src="Images/4.png" alt="" /></figure>
+          <div class="card-body px-12 py-36 bottom-4">
+            <h2 class="card-title">Teenager Program</h2>
+            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+              enim sagittis turpis in <br> Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+              <button class="btn btn-error w-36">Register Now</button>
+          </div>
+        </div>
+      </div>
+        
+     </section>
+      <!-- new product -->
+      <section>
+        <!-- card-1 -->
+        <h3 class="text-3xl font-bold text-center">Our New Products</h3>
+        <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. <br> Purus urna in sit nullam proin. </p>
+      
+        <div>
+          <div class="hero">
+          <div class="hero-content flex-col lg:flex-row">
+            <img src="Images/8.png" />
+            <div>
+              <div class="rating gap-12">
+                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" 5.0 checked />
+                <input type="radio" name="rating-3" class="mask mask-heart bg-black-500" checked />
+               
+              </div>
+              <h1 class="text-3xl font-bold">World Cup Flags Football</h1>
+              <p class="">Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+              <p class="text-orange-600 font-semibold">Price - $22.00</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- card -->
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="Images/5.png" />
+              <div>
+                <div class="rating gap-12">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" 5.0 checked />
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-black-500" checked />
+                 
+                </div>
+                <h1 class="text-3xl font-bold">World Cup Flags Football</h1>
+                <p class="">Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                <p class="text-orange-600 font-semibold">Price - $22.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- tow -->
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="Images/6.png" />
+              <div>
+                <div class="rating gap-12">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" 5.0 checked />
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-black-500" checked />
+                 
+                </div>
+                <h1 class="text-3xl font-bold">World Cup Flags Football</h1>
+                <p class="">Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                <p class="text-orange-600 font-semibold">Price - $22.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- three -->
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="Images/7.png" />
+              <div>
+                <div class="rating gap-12">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" 5.0 checked />
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-black-500" checked />
+                 
+                </div>
+                <h1 class="text-3xl font-bold">Cap For Hockeys</h1>
+                <p class="">Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                <p class="text-orange-600 font-semibold">Price - $22.00</p>
+              </div>
+            </div>
+          </div>
+          <!-- four -->
+          <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+              <img src="Images/8.png" />
+              <div>
+                <div class="rating gap-12">
+                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" 5.0 checked />
+                  <input type="radio" name="rating-3" class="mask mask-heart bg-black-500" checked />
+                 
+                </div>
+                <h1 class="text-3xl font-bold">World Cup Flags Football</h1>
+                <p class="">Dolor sit amet consectetur. Ut urna diam <br> quis sagittis. </p>
+                <p class="text-orange-600 font-semibold">Price - $22.00</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <!-- clint qus -->
+      <section class="py-24">
+        <h1 class="text-3xl text-center font-bold">Clients Question</h1>
+      <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+       
+      <div class="flex justify-around py-12">
+        <div>
+          <img src="Images/11.png" alt="">
+        </div>
+        <div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">
+              Our Equipment
+            </div>
+            <div class="collapse-content"> 
+              <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim sagittis turpis in magna.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+Hockey Training            </div>
+            <div class="collapse-content"> 
+              <p>its good</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+Private Lessons            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+ski Touring            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+Booking            </div>
+            <div class="collapse-content"> 
+              <p>hello</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+    </main>
     
 </body>
 </html>
